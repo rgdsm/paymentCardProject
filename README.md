@@ -22,7 +22,7 @@ Este projeto foi desenvolvido como parte do meu aprendizado em Angular. O princi
 
 ## Como Rodar o Projeto
 
-1. Clone este repositório:
+1. Clone este repositório: <br>
 git clone https://github.com/rgdsm/paymentCardProject.git
 
 2. Instale as dependências do projeto: <br>
