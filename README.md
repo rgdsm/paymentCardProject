@@ -25,10 +25,10 @@ Este projeto foi desenvolvido como parte do meu aprendizado em Angular. O princi
 1. Clone este repositório:
 git clone https://github.com/rgdsm/paymentCardProject.git
 
-2. Instale as dependências do projeto:
+2. Instale as dependências do projeto: <br>
 npm install
 
-3. Inicie o servidor de desenvolvimento:
+3. Inicie o servidor de desenvolvimento: <br>
 ng serve
 
 4. Abra o navegador e acesse http://localhost:4200
