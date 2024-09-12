@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+$cardColor: #575efc;
+$textColor: #fff;
+$black: #000;
+$gradient: rgba(87, 94, 252, 1);
+$secondary-color: rgba(0, 212, 255, 1);
+$thidColor: #cdcdcd;
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.section-area {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0 0 0;
+  flex-wrap: wrap;
+  row-gap: 130px;
+  padding: 30px 0 0 0;
+}
+
+.cards {
+  background: linear-gradient(207deg, $gradient 35%, $secondary-color 83%);
+
+  color: $textColor;
+  width: 480px;
+  height: 270px;
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 1px solid $black;
+  box-shadow: 1px 1px 2px 3px rgba($color: #000000, $alpha: 0.4);
+}
+
+.bank-logo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 30px;
+  align-items: center;
+}
+
+.cardName {
+  font-size: 20px;
+  font-weight: 400;
+}
+.numbers {
+  text-align: left;
+  letter-spacing: 1.4px;
+  font-size: 30px;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  margin-left: 30px;
+}
+
+.date {
+  margin: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.form {
+  background-color: $textColor;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  text-align: center;
+}
+
+.payment {
+  padding: 30px 0 0 0;
+}
+
+.firstInputs {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 80px;
+}
+
+.firstInputs input {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid $thidColor;
+  border-radius: 10px;
+}
+
+.firstInputSection {
+  margin: 10px !important;
+}
+.secondInputSection {
+  margin: 10px !important;
+  width: 100px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pay,
+.cancel {
+  padding: 10px;
+
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid $cardColor;
+  letter-spacing: 1.2px;
+  border-radius: 5px;
+}
+
+.pay {
+  background-color: $cardColor;
+  color: $textColor;
+}
+
+.pay:hover {
+  background-color: $textColor;
+  color: $cardColor;
+  transition: 0.3s ease-out;
+}
+
+.cancel {
+  color: $cardColor;
+  background-color: $textColor;
+}
+
+.cancel:hover {
+  color: $textColor;
+  background-color: $cardColor;
+  transition: 0.3s ease-out;
+}

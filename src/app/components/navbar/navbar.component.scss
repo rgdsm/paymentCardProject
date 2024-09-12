@@ -1,0 +1,33 @@
+
+$primary-color: #737373;
+$hover-color: #3a3a3a;
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.list{
+    display: flex;
+    gap: 80px;
+    padding: 10px;
+    list-style-type: none;
+    border-bottom: 1px solid $primary-color;
+}
+
+.listItem {
+    margin: 0 60px;
+}
+
+.listItem a {
+    color: $primary-color;   
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.listItem a:hover {
+    color: $hover-color;
+}

@@ -1,0 +1,48 @@
+<main class="main-area">
+    <section class="section-area">
+        <div class=card-area><!-- Card area -->
+            <div class="cards"><!-- Cards -->
+                <div class="bank-logo">
+                    <h2 class="cardName">Credit</h2>
+                    <h2 class="h2-bank">Bank</h2>
+            
+                </div>
+                <div class="numbers">
+                    <p class="data-style" id="number-card">{{placeCard}}</p>
+                </div>
+                <div class="date">
+                    <p class="data-style" id="name">{{placeName.toUpperCase()}}</p>
+                    <p class="data-style" id="date-card">{{monthData}} / {{yearData}}</p>
+                </div>
+
+            </div><!-- Cards -->
+        </div><!-- Card area -->
+
+        <div class="form">
+            <h2 class="payment">Payment Details</h2>
+            <div class="form-input">
+                <form action="#" class="form">
+                    <div class="firstInputs">
+                        <input type="text" placeholder="Card Number" [(ngModel)]="placeCard" [ngModelOptions]="{standalone: true}" (input)="formatCardNumber()" maxlength="19"class="firstInputSection">
+                        <input type="text" placeholder="Cardholder name" [(ngModel)]="placeName" [ngModelOptions]="{standalone: true}" class="firstInputSection">
+                        <div class="lastinputs">
+                            <input type="text" name="" id="month" placeholder="12" [(ngModel)]="monthData" [ngModelOptions]="{standalone: true}" maxlength="2" class="secondInputSection">
+                            <input type="text" name="" id="year" placeholder="24" [(ngModel)]="yearData" [ngModelOptions]="{standalone: true}" maxlength="2" class="secondInputSection">
+                            <input type="text" name="" id="year" placeholder="CVV" maxlength="3" [(ngModel)]="cvvData" [ngModelOptions]="{standalone: true}" class="secondInputSection">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="pay">
+                            Confirm and Pay
+                        </button>
+                        <button class="cancel">
+                            Cancel
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+</main>
